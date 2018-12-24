@@ -50,8 +50,8 @@ Taking an exploratory view of your dataset, you start by plotting a pair-plot, i
 ###PairPlot
 
 ...Python
-X = A[['Unidad_Negocio_num', 'MERCH_AMT_BSE','week']] # Los campos a revisar
-X1 = X.fillna(0) # Siempre limpiar la matriz, para que pueda graficar el Pairplot
+X = A[['Unidad_Negocio_num', 'MERCH_AMT_BSE','week']]
+X1 = X.fillna(0)
 sns.set(style="ticks", color_codes=True)
 g = sns.pairplot(X1)
 ...
