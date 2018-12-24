@@ -49,12 +49,12 @@ Taking an exploratory view of your dataset, you start by plotting a pair-plot, i
 
 ###PairPlot
 
-...
+```
 X = A[['Unidad_Negocio_num', 'MERCH_AMT_BSE','week']]
 X1 = X.fillna(0) 
 sns.set(style="ticks", color_codes=True)
 g = sns.pairplot(X1)
-...
+```
 
 ![pairplot](https://user-images.githubusercontent.com/17385297/50396627-dfc8da00-0749-11e9-9e97-2fd6559442c7.PNG)
 
