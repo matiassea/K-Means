@@ -49,7 +49,7 @@ Taking an exploratory view of your dataset, you start by plotting a pair-plot, i
 
 ###PairPlot
 
-```
+```python
 X = A[['Unidad_Negocio_num', 'MERCH_AMT_BSE','week']]
 X1 = X.fillna(0) 
 sns.set(style="ticks", color_codes=True)
