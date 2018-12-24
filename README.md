@@ -50,8 +50,8 @@ Taking an exploratory view of your dataset, you start by plotting a pair-plot, i
 ###PairPlot
 
 ```python
-X = A[['Unidad_Negocio_num', 'MERCH_AMT_BSE','week']]
-X1 = X.fillna(0) 
+X = A[['Unidad_Negocio_num', 'MERCH_AMT_BSE','week']] #seleccionar columnas del database
+X1 = X.fillna(0) #simpre limpiar database
 sns.set(style="ticks", color_codes=True)
 g = sns.pairplot(X1)
 ```
