@@ -14,6 +14,8 @@ One important detail about K-Means Clustering is that, even though it identifies
 
 Your preferred workout is jogging and, since you're extremely data-inclined, you make sure to keep track of your performance. So you end up compiling a dataset similar to this
 
+![1 krczk0xygta4qfrvr0fo2w](https://user-images.githubusercontent.com/17385297/50397095-c7a68a00-074c-11e9-9d64-c86bf941c8cd.gif)
+
 
 ### Application
 
