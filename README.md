@@ -16,10 +16,13 @@ Your preferred workout is jogging and, since you're extremely data-inclined, you
 
 ### Overall
 
-    To begin, we first select a number of classes/groups to use and randomly initialize their respective center points. To figure out the number of classes to use, it’s good to take a quick look at the data and try to identify any distinct groupings. The center points are vectors of the same length as each data point vector and are the “X’s” in the graphic above.
-    Each data point is classified by computing the distance between that point and each group center, and then classifying the point to be in the group whose center is closest to it.
-    Based on these classified points, we recompute the group center by taking the mean of all the vectors in the group.
-    Repeat these steps for a set number of iterations or until the group centers don’t change much between iterations. You can also opt to randomly initialize the group centers a few times, and then select the run that looks like it provided the best results. 
+1. To begin, we first select a number of classes/groups to use and randomly initialize their respective center points. To figure out the number of classes to use, it’s good to take a quick look at the data and try to identify any distinct groupings. The center points are vectors of the same length as each data point vector and are the “X’s” in the graphic above.
+
+2. Each data point is classified by computing the distance between that point and each group center, and then classifying the point to be in the group whose center is closest to it.
+
+3. Based on these classified points, we recompute the group center by taking the mean of all the vectors in the group.
+
+4. Repeat these steps for a set number of iterations or until the group centers don’t change much between iterations. You can also opt to randomly initialize the group centers a few times, and then select the run that looks like it provided the best results. 
 
 K-Means has the advantage that it’s pretty fast, as all we’re really doing is computing the distances between points and group centers; very few computations! It thus has a linear complexity O(n).
 
@@ -29,6 +32,9 @@ K-Medians is another clustering algorithm related to K-Means, except instead of 
 
 
 ![1 krczk0xygta4qfrvr0fo2w](https://user-images.githubusercontent.com/17385297/50397095-c7a68a00-074c-11e9-9d64-c86bf941c8cd.gif)
+
+
+[Source](https://www.kdnuggets.com/2018/06/5-clustering-algorithms-data-scientists-need-know.html/).
 
 
 ### Application
@@ -41,12 +47,14 @@ A good practice in Data Science & Analytics is to first have good understanding 
 
 Taking an exploratory view of your dataset, you start by plotting a pair-plot, in order to get a better idea about the correlation between different features.
 
-###PairPlot 
+###PairPlot
+
+...Python
 X = A[['Unidad_Negocio_num', 'MERCH_AMT_BSE','week']] # Los campos a revisar
 X1 = X.fillna(0) # Siempre limpiar la matriz, para que pueda graficar el Pairplot
 sns.set(style="ticks", color_codes=True)
 g = sns.pairplot(X1)
-
+...
 
 ![pairplot](https://user-images.githubusercontent.com/17385297/50396627-dfc8da00-0749-11e9-9e97-2fd6559442c7.PNG)
 
@@ -94,6 +102,5 @@ Going back to the original dataset and re-running K-Means with the new found K, 
 ![k means 5](https://user-images.githubusercontent.com/17385297/50396762-ac3a7f80-074a-11e9-8670-7ea1f58ad397.PNG)
 
 
-Source: https://www.kdnuggets.com/2018/08/k-means-real-life-clustering-workout-sessions.html
-
+[Source](https://www.kdnuggets.com/2018/08/k-means-real-life-clustering-workout-sessions.html/).
 
